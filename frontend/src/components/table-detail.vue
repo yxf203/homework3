@@ -26,12 +26,13 @@
 		</el-descriptions-item>
 		<el-descriptions-item>
 			<template #label> 头像 </template>
-			<img :src="data.thumb" style="width: 120px" alt="" />
+			<img :src="UPLOADURL+data.thumb" style="width: 120px" alt="" />
 		</el-descriptions-item>
 	</el-descriptions>
 </template>
 
 <script lang="ts" setup>
+import { client, UPLOADURL } from '../client';
 const props = defineProps({
 	data: {
 		type: Object,
