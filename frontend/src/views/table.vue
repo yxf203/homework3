@@ -69,6 +69,7 @@
                     :total="pageTotal"
                     @current-change="handlePageChange"
                 ></el-pagination>
+                
             </div>
         </div>
         <el-dialog
@@ -183,7 +184,9 @@ const handleView = (row: db_User) => {
 .table-td-thumb {
     display: block;
     margin: auto;
-    width: 40px;
-    height: 40px;
+    max-width: 40px; /* 设置图片最大宽度 */
+    max-height: 40px; /* 设置图片最大高度 */
+    width: auto;
+    height: auto;
 }
 </style>

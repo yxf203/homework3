@@ -110,6 +110,13 @@ const localUpload = async (params: UploadRequestOptions) => {
 </script>
 
 <style>
+.avatar {
+  width: 100px;  /* 设置图片的宽度为40px */
+  height: 100px; /* 设置图片的高度为40px */
+  border-radius: 0%;  /* 保持图片为圆形 */
+  object-fit: cover;  /* 图片内容按比例填充，超出部分裁剪 */
+}
+
 .avatar-uploader .el-upload {
 	border: 1px dashed var(--el-border-color);
 	border-radius: 6px;
