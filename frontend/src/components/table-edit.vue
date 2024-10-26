@@ -113,7 +113,7 @@ const localUpload = async (params: UploadRequestOptions) => {
 .avatar {
   width: 100px;  /* 设置图片的宽度为40px */
   height: 100px; /* 设置图片的高度为40px */
-  border-radius: 0%;  /* 保持图片为圆形 */
+  border-radius: 0%;  /* 保持图片为正方形 */
   object-fit: cover;  /* 图片内容按比例填充，超出部分裁剪 */
 }
 
