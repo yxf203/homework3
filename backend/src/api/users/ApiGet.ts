@@ -6,7 +6,7 @@ export default async function (call: ApiCall<ReqGet, ResGet>) {
     const { pageIndex, pageSize, name } = call.req.query;
     const filter: any = {}
     if (name) {
-        filter.filter = new RegExp(name!)
+        filter.name = new RegExp(name!)
     }
 
     const ret = await Global.db.collection('User').aggregate([
